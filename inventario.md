@@ -103,8 +103,17 @@ Nota: hay dos navegaciones en uso (Nav y NavBar_2).
 5. **Tipo**: texto libre; normalizarlo exigiría un campo nuevo de lista.
 6. El precio vive en SKUs, no en Inmuebles: hay que tenerlo en cuenta al conectar las tarjetas.
 
-## Pendiente de leer
+## Home: estructura (lectura)
 
-- Estructura de la Home y de "Recién llegados" (elementos y clases usadas).
-- Variables de estilo.
-- Si alguna ficha usa `compare-at-price`.
+Orden real de secciones: `Nav` (componente) → `Hero Section` (`#Hero`) → sección `Inmuebles` (bloque CTA + `#Ultimos-inmuebles` con lista CMS `Products List Wrapper`, versión escritorio) → otro `Container mobile oportunidades` (lista CMS para móvil) → `Oportunidades` (tercera lista CMS) → `Servicios` → `Contacto` (columnas + formulario) → `Footer` (componente).
+
+- Hay **3 listas CMS de inmuebles** en la Home, y los tres bloques comparten `id="Ultimos-inmuebles"` (id repetido; conviene corregirlo en staging).
+- Los bloques "Recién llegados" y "Últimas ventas" del plan se corresponden con estas listas; falta abrir cada lista para ver sus filtros y la tarjeta (`c-card*`).
+
+## Variables de estilo
+
+Una sola colección, `default` (modo base). No hay variables de marca definidas: colores y tipografías están puestos directamente en las clases.
+
+## `compare-at-price`
+
+No se puede filtrar por campos de tipo Precio vía API, así que no sé cuántas fichas lo usan. Se puede comprobar leyendo SKUs por tandas o mirando en el Designer.
