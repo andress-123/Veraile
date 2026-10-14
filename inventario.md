@@ -117,3 +117,22 @@ Una sola colección, `default` (modo base). No hay variables de marca definidas:
 ## `compare-at-price`
 
 No se puede filtrar por campos de tipo Precio vía API, así que no sé cuántas fichas lo usan. Se puede comprobar leyendo SKUs por tandas o mirando en el Designer.
+
+## Piloto de tarjetas con estados (página borrador "Testing area", `6acf3d5d1e943fcc9142ffeb`)
+
+Hecho el 2026-10-14. Solo en esa página (borrador) + clases `test-*` nuevas. Nada publicado.
+
+**Creado**
+- 10 clases `test-*`: `test-grid`, `test-card`, `test-card_photo`, `test-card_body`, `test-card_title`, `test-card_place`, `test-badge`, `test-price`, `test-price-old`, `test-price-drop`.
+- 4 tarjetas de muestra estáticas (Nuevo, Rebajado, Reservado, Vendido) con `data-estado`.
+- CSS de estados en el código de cabecera **de la página** (selectores `[data-estado]` / `[data-badge]`).
+- Script `VerailePilotEstados` v0.0.1, aplicado solo a la página: calcula `data-estado` desde `data-cms-estado`, `data-cms-old` y `data-cms-created`.
+- Collection List sobre Inmuebles (límite 6) con una tarjeta: título (Name), pueblo (Dirección) y `data-cms-estado` (Vendido/Alquilado/Reservado) ya enlazados.
+
+**Salió solo (API)**: clases, estructura, estados por CSS, script, lista de colección y enlaces de texto/atributo de campos propios de Inmuebles.
+
+**Hubo que retocar / no es posible por API**
+- `set_text` en el builder no se guardó (quedó el texto de relleno); se corrigió con `set_settings`.
+- **No son enlazables por API**: `price` y `compare-at-price` (tipo Precio, en SKUs) y la fecha de creación. Hay que enlazarlos a mano en el Designer: precio → `test-price`, `compare-at-price` → atributo `data-cms-old`, fecha de creación → atributo `data-cms-created`. Sin ellos no salen Nuevo ni Rebajado en la lista real.
+- Falta la foto: enlazar `Default SKU › Main Image` al fondo/imagen de `test-card_photo`.
+- Orden de la lista: pendiente de poner "más recientes primero" (la ordenación no se probó).
