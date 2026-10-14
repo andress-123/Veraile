@@ -280,3 +280,8 @@ Página `home-2-0-borrador` (`6acf46c079e13ee0a6bfb34a`), publicada solo en el s
 - Menú móvil unificado: embeds `38651f60-3947-b3c6-52f0-91ac110f12ae` (ficha) y `e13f803b-3145-6f5e-967c-abb081e37370` (Inmuebles), mismo CSS que la Home.
 - Ficha: la "masa verde" sobre la foto era la banda antigua de vendido (`.container-11`) dentro de la galería; oculta junto con `.pill-2` y `.c-card_type` antiguos.
 - Página 404 (`6acf46c079e13ee0a6bfb338`): contenido antiguo oculto y embed `c3f25fc8-e52b-0bef-ff3f-26a2343204b4` con fondo petróleo, logo, "404" grande, botones a Inicio e Inmuebles y teléfono.
+
+## Auditoría y arreglos (staging)
+- Logo/"Home"/logo del pie de Inmuebles, ficha, Madrid y Servicios apuntaban a `/old-home` (borrador): script que los redirige a `/` (embeds en cada página: `e13f803b…` Inmuebles, `38651f60…` ficha, `4fcfb680-c24e-d9e4-0c95-ca7370a33156` Madrid, `6a8745ea-2752-d297-0525-aefabf9d7ef3` Servicios).
+- Slider móvil: las tarjetas 3+ quedaban en `opacity:0` (interacción de Webflow que solo se activa con scroll vertical); forzado visible en `.products-list`. Comprobado con swipe táctil real.
+- Accesibilidad/SEO: `lang="es"` por script, h1 en Inmuebles/Madrid (oculto) y ficha (role heading), enlaces sociales reales en la Home (Instagram y LinkedIn; Facebook oculto porque no hay URL), zonas táctiles del pie ampliadas.
