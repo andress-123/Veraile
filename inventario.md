@@ -260,3 +260,5 @@ Página `home-2-0-borrador` (`6acf46c079e13ee0a6bfb34a`), publicada solo en el s
 ### Filtro de precio máximo (2026-10-14, staging)
 - /inmuebles: nuevo grupo "Precio máximo" en el acordeón (select 50.000 € … 1.000.000 €) que oculta tarjetas con precio > máximo (o sin precio numérico, p. ej. "CONSULTAR PRECIO"). Lee `?preciomax=` de la URL (lo envía el buscador de la Home), actualiza la URL, muestra contador y respeta "Resetear". No usa Finsweet porque el precio es un campo comercio de tipo texto; se combina con el resto de filtros.
 - Verificado: sin filtro 199; `preciomax=100000` → 145 (máx. 100.000); + pueblo Jaraíz 36 con ≤50.000; Venta+Casa+≤150.000 → 58.
+
+- Ficha: botón "Ficha PDF" con el verde suave (#E4F4F4, texto petróleo) como estado por defecto; hover un punto más oscuro.
