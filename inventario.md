@@ -155,3 +155,11 @@ Solo añadido, nada borrado ni rellenado todavía:
 - Pendiente de OK de Andrés: muestra de 10 fichas para rellenar `Tipo` y `Es nuevo`.
 
 Limitaciones de la API en la copia: escribir el código de cabecera de una página da 404 y los scripts copiados no se pueden editar (se registró `VerailePilotHomeB`).
+
+## Home 2.0 en el staging: estados según maqueta (2026-10-14)
+
+- Página `home-2-0-borrador` (`6acf46c079e13ee0a6bfb34a`) en el staging. Script `VerailePilotHomeC` v0.0.1 (el anterior no se podía editar en la copia).
+- Pastillas como en `Home.html`: Nuevo (blanca con punto turquesa), Precio rebajado (turquesa, flecha) + cajita con los euros rebajados, Reservado (oscura translúcida), Vendido (gris + "✓ Vendido" abajo a la izquierda). Se ocultan las etiquetas antiguas `c-card_type` (VENTA/OPORTUNIDAD) solo en esa página.
+- "Es nuevo" no se puede enlazar a un atributo; se enlaza la **visibilidad** de un marcador `data-flag="nuevo"` dentro de la tarjeta (el script lo detecta).
+- Comprobado en la web publicada: 4 Nuevo, 4 Vendido, 1 Rebajado.
+- Pendiente: el diseño de la tarjeta (foto 280 px, precio 24 px arriba, "4 hab. · 2 baños · 238 m²") todavía es el de la web actual; hay que restilar `c-card*` (en el staging se pueden editar las clases reales).
