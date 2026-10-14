@@ -286,3 +286,8 @@ Página `home-2-0-borrador` (`6acf46c079e13ee0a6bfb34a`), publicada solo en el s
 - Slider móvil: las tarjetas 3+ quedaban en `opacity:0` (interacción de Webflow que solo se activa con scroll vertical); forzado visible en `.products-list`. Comprobado con swipe táctil real.
 - Accesibilidad/SEO: `lang="es"` por script, h1 en Inmuebles/Madrid (oculto) y ficha (role heading), enlaces sociales reales en la Home (Instagram y LinkedIn; Facebook oculto porque no hay URL), zonas táctiles del pie ampliadas.
 - Tarjetas de /inmuebles: habitaciones, baños y m² en una sola línea (`.c-card_details` pasa de columna a fila) y alineados con el precio y la ubicación (embed `e13f803b…`).
+
+## Mejoras UX/UI (ronda final, staging)
+- /inmuebles: contador "N inmuebles" que se actualiza con los filtros (`.fx-count`, `aria-live`), fila de datos de la tarjeta sin huecos si no hay habitaciones/baños, números grandes con separador de miles (embed `e13f803b…`).
+- Home móvil: hero con márgenes laterales y esquinas redondeadas, gutters de 16px en todas las secciones, eyebrow del hero más claro (embed nuevo `75db2af1-6bcc-11e3-cb01-11f371e369f5`).
+- Ficha móvil: galería con margen lateral y esquinas redondeadas, formulario alineado (embed `38651f60…`).
