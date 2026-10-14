@@ -199,3 +199,10 @@ Página `home-2-0-borrador` (`6acf46c079e13ee0a6bfb34a`), publicada solo en el s
 - Formulario del filtro: nuevo HtmlEmbed con checkboxes Tipo de inmueble y Pueblo (`fs-cmsfilter-field`).
 - Verificado en Playwright: `?tipoinmueble=Casa` 63, `Solar` 12, `?pueblo=Jaraíz de la Vera` 117, ambos 28, `?tipo=Venta&tipoinmueble=Finca` 38 (de 199 visibles).
 - Pendiente: `preciomax` del buscador de la Home aún no filtra (el precio es texto).
+
+## Ficha de inmueble rehecha en el staging (2026-10-14)
+- Plantilla `Inmuebles Template` (`6acf46c079e13ee0a6bfb33d`) de la copia `6acf46c079e13ee0a6bfb366`. El bloque antiguo ("Content Section") queda OCULTO, no borrado.
+- Nuevo bloque `[data-fx=sec]` con esqueleto (migas, píldoras Régimen/Tipo, título, ubicación, precio, galería 1+4, tarjetas hab./baños/m², descripción, chips, zona aproximada, panel de contacto). Los elementos con datos (precio SKU, nombre, galería, rich text, amenidades, formulario) se MOVIERON con `move_element`, así que conservan sus enlaces a CMS.
+- Dos HtmlEmbed con CSS (escritorio/móvil/print) y uno con script: WhatsApp con mensaje prellenado, "Ver las N fotos", Ficha PDF (`window.print()`), Compartir (`navigator.share`/copiar enlace) y barra fija móvil (WhatsApp + Llamar).
+- Verificado con Playwright en escritorio (1440) y móvil (390) sobre `/product/edificio-en-jaraiz-de-la-vera`.
+- Pendiente: "También te puede interesar" (lista relacionada), miniaturas móviles, probar ficha con terraza/parking (chips) y vendido, revisar mapa/zona.
