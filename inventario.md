@@ -262,3 +262,9 @@ Página `home-2-0-borrador` (`6acf46c079e13ee0a6bfb34a`), publicada solo en el s
 - Verificado: sin filtro 199; `preciomax=100000` → 145 (máx. 100.000); + pueblo Jaraíz 36 con ≤50.000; Venta+Casa+≤150.000 → 58.
 
 - Ficha: botón "Ficha PDF" con el verde suave (#E4F4F4, texto petróleo) como estado por defecto; hover un punto más oscuro.
+
+## Críticas de diseño aplicadas (staging 6acf46c0…)
+- Home nueva ya servida en `/`; "Home antigua" (`…b337`, slug `old-home`) pasada a borrador.
+- Home: embed CSS/JS `fe5bd1e8-58a9-2e17-e406-8e0766b5e725` (menos aire entre secciones, iconos de servicios con más contraste, etiquetas en turquesa oscuro, enlaces del footer ≥44px, carrusel móvil con snap + puntos) y embed `53272fa1-95b1-39cd-0e22-b9741cd43769` (banner de cookies iubenda como barra inferior compacta; quita toggles y "Saber más").
+- CMS: `m2` normalizado en 2 fichas ("5000 Aprox." → "5.000", "115 construidos" → "115").
+- Publicado solo en subdominio webflow.io; producción intacta.
