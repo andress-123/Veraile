@@ -136,3 +136,11 @@ Hecho el 2026-10-14. Solo en esa página (borrador) + clases `test-*` nuevas. Na
 - **No son enlazables por API**: `price` y `compare-at-price` (tipo Precio, en SKUs) y la fecha de creación. Hay que enlazarlos a mano en el Designer: precio → `test-price`, `compare-at-price` → atributo `data-cms-old`, fecha de creación → atributo `data-cms-created`. Sin ellos no salen Nuevo ni Rebajado en la lista real.
 - Falta la foto: enlazar `Default SKU › Main Image` al fondo/imagen de `test-card_photo`.
 - Orden de la lista: pendiente de poner "más recientes primero" (la ordenación no se probó).
+
+## Staging (copia segura)
+
+- **Copy of Veraile Inmobiliaria** · siteId `6acf46c079e13ee0a6bfb366` · workspace `6257473c3e5c610181b2812d` (el de Andrés) · sin dominios propios.
+- Verificado 2026-10-14: 19 páginas, 4 colecciones, 213 fichas, scripts `VerailePilotEstados` y `VerailePilotHome` y el CSS del piloto.
+- Publicado solo en `https://veraile-7c607b9967c33f0f5a3cf013cbc1fe6.webflow.io` (páginas `/home-2-0-borrador` y `/testing-area`, sacadas de borrador **solo en la copia**).
+- Producción (`61f9d3408efe602f155341f0`, workspace `6224eb33e2f1f81739ba3990`) queda solo para lectura. Las páginas de prueba que creé allí siguen en borrador.
+- Desde ahora, toda escritura va al staging.
