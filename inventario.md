@@ -163,3 +163,12 @@ Limitaciones de la API en la copia: escribir el código de cabecera de una pági
 - "Es nuevo" no se puede enlazar a un atributo; se enlaza la **visibilidad** de un marcador `data-flag="nuevo"` dentro de la tarjeta (el script lo detecta).
 - Comprobado en la web publicada: 4 Nuevo, 4 Vendido, 1 Rebajado.
 - Pendiente: el diseño de la tarjeta (foto 280 px, precio 24 px arriba, "4 hab. · 2 baños · 238 m²") todavía es el de la web actual; hay que restilar `c-card*` (en el staging se pueden editar las clases reales).
+
+## Paso 1 y 2 en el staging: tarjeta, hero y buscador (2026-10-14)
+
+- Tarjeta (`c-card*`, `Shop Item Price`, `Shop Item Name`) restilada como la maqueta; el combo `c-card_content.home` tenía `min-height:180px` (causa del hueco). Cambios hechos sobre las clases reales **de la copia**.
+- Sección: eyebrow "Disponibles", H2 "Recién llegados", enlace "Ver todos los disponibles".
+- Hero: tarjeta redondeada 600 px con margen 96 px, titular "Casas, fincas y negocios en La Vera", sin botón; eyebrow `v2-eyebrow` nueva.
+- Buscador (HtmlEmbed bajo el hero, GET a `/inmuebles`): Operación (`tipo=Venta|Alquiler`), Tipo (`tipoinmueble`), Pueblo (`pueblo`), Precio máximo (`preciomax`).
+- Comprobado: el listado de la copia acepta filtros por URL (`?tipo=Venta` → 192 de 199; `?Tipo=Alquiler` → 7). **Solo Operación es funcional hoy**; Tipo, Pueblo y Precio máximo necesitan campos de filtro en las tarjetas y el formulario de `/inmuebles`.
+- Limitación API: publicar a una web ya publicada exige esperar 1 minuto entre publicaciones.
