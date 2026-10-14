@@ -248,3 +248,7 @@ Página `home-2-0-borrador` (`6acf46c079e13ee0a6bfb34a`), publicada solo en el s
 - Páginas: "Home 2.0 borrador" renombrada "Home" (SEO copiado); la Home antigua renombrada "Home antigua". La API NO permite poner en borrador la página de inicio ni cambiar cuál es: hay que usar en el Designer Páginas → "Home" (nueva) → ⚙ → "Set as Home page"; después poner "Home antigua" en borrador.
 - En borrador: Testing area, Test Page, Inmuebles Copia (devuelven 404 publicadas). /inmuebles-madrid se mantiene (es una página real) con las tarjetas y etiquetas unificadas.
 - Producción (`61f9d3408efe602f155341f0`) sigue sin tocarse.
+
+### Ajustes 5 (2026-10-14, staging)
+- Chip "↓ X €" de rebaja centrado en la pastilla (inline-flex, altura 28 px) e importes con punto de millar ("5.000 €"); todas las pastillas de estado (`.v2-b`, `.fxp`) con altura fija y texto centrado.
+- Home antigua (todavía es la raíz "/" hasta que se haga "Set as Home page"): sus tarjetas de "Inmuebles destacados" usan ya las etiquetas nuevas (sin banda VENDIDO ni VENTA/OPORTUNIDAD), iconos minimal y fila de datos unificada. Quedará en borrador al activar la nueva.
