@@ -268,3 +268,10 @@ Página `home-2-0-borrador` (`6acf46c079e13ee0a6bfb34a`), publicada solo en el s
 - Home: embed CSS/JS `fe5bd1e8-58a9-2e17-e406-8e0766b5e725` (menos aire entre secciones, iconos de servicios con más contraste, etiquetas en turquesa oscuro, enlaces del footer ≥44px, carrusel móvil con snap + puntos) y embed `53272fa1-95b1-39cd-0e22-b9741cd43769` (banner de cookies iubenda como barra inferior compacta; quita toggles y "Saber más").
 - CMS: `m2` normalizado en 2 fichas ("5000 Aprox." → "5.000", "115 construidos" → "115").
 - Publicado solo en subdominio webflow.io; producción intacta.
+
+## Ronda móvil (staging)
+- Scroll atascado en "Escríbenos" (móvil): causa = lista `products-list featured` oculta de escritorio activa en móvil; ahora `display:none` en ≤767px (embed `53272fa1-…` de la Home).
+- Menú móvil: lista vertical, botón hamburguesa discreto, teléfono con margen derecho 16px (Home). Pendiente replicar en Inmuebles/ficha si se ve igual.
+- Tarjetas "Recién llegados" móvil: texto alineado, imágenes `eager` en el carrusel. Ilustraciones de servicios: color original y centradas.
+- Ficha: más aire (embed `b3e35d48-760d-8aec-3699-fb94199cd035`), franja de contacto oculta y pie mínimo; widget US de iubenda oculto.
+- Cookies: `cookies-banner.html` (banner propio sin terceros, carga Elfsight solo con consentimiento). La API no permite escribir el código del sitio (404): hay que pegarlo en Site settings → Custom code → Head, sustituyendo los scripts de iubenda.
