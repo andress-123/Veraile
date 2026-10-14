@@ -256,3 +256,7 @@ Página `home-2-0-borrador` (`6acf46c079e13ee0a6bfb34a`), publicada solo en el s
 ### Ficha PDF v3 (2026-10-14, staging)
 - Cabecera con el logotipo SVG de Veraile (en vez de texto) + "Ficha de inmueble" y contacto; foto principal + 3 fotos sin solaparse; precio tachado reducido; banda antigua de VENDIDO oculta en impresión.
 - Faldón inferior pegado al borde: 4 columnas (Oficina Jaraíz · Oficina Villanueva · Escríbenos/WhatsApp · Esta ficha con la URL), fondo petróleo. Una sola página A4.
+
+### Filtro de precio máximo (2026-10-14, staging)
+- /inmuebles: nuevo grupo "Precio máximo" en el acordeón (select 50.000 € … 1.000.000 €) que oculta tarjetas con precio > máximo (o sin precio numérico, p. ej. "CONSULTAR PRECIO"). Lee `?preciomax=` de la URL (lo envía el buscador de la Home), actualiza la URL, muestra contador y respeta "Resetear". No usa Finsweet porque el precio es un campo comercio de tipo texto; se combina con el resto de filtros.
+- Verificado: sin filtro 199; `preciomax=100000` → 145 (máx. 100.000); + pueblo Jaraíz 36 con ≤50.000; Venta+Casa+≤150.000 → 58.
