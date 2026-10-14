@@ -206,3 +206,8 @@ Página `home-2-0-borrador` (`6acf46c079e13ee0a6bfb34a`), publicada solo en el s
 - Dos HtmlEmbed con CSS (escritorio/móvil/print) y uno con script: WhatsApp con mensaje prellenado, "Ver las N fotos", Ficha PDF (`window.print()`), Compartir (`navigator.share`/copiar enlace) y barra fija móvil (WhatsApp + Llamar).
 - Verificado con Playwright en escritorio (1440) y móvil (390) sobre `/product/edificio-en-jaraiz-de-la-vera`.
 - Pendiente: "También te puede interesar" (lista relacionada), miniaturas móviles, probar ficha con terraza/parking (chips) y vendido, revisar mapa/zona.
+
+### Ficha: relacionados y estado (2026-10-14)
+- "También te puede interesar": lista Inmuebles (100) con tarjeta enlazada; un script la reduce a 3 (mismo pueblo primero, sin la ficha actual) y construye el enlace desde un texto oculto con el Slug (la API no deja enlazar el enlace dinámico).
+- Píldora de estado (Vendido/Alquilado/Reservado) enlazada al campo CMS en la cabecera.
+- Verificado: ficha con terraza/parking/aire (chips), tarjetas 4 hab./2 baños/238 m², zona, relacionados; ficha reservada muestra "RESERVADO".
