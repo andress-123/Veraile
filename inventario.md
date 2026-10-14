@@ -275,3 +275,8 @@ Página `home-2-0-borrador` (`6acf46c079e13ee0a6bfb34a`), publicada solo en el s
 - Tarjetas "Recién llegados" móvil: texto alineado, imágenes `eager` en el carrusel. Ilustraciones de servicios: color original y centradas.
 - Ficha: más aire (embed `b3e35d48-760d-8aec-3699-fb94199cd035`), franja de contacto oculta y pie mínimo; widget US de iubenda oculto.
 - Cookies: `cookies-banner.html` (banner propio sin terceros, carga Elfsight solo con consentimiento). La API no permite escribir el código del sitio (404): hay que pegarlo en Site settings → Custom code → Head, sustituyendo los scripts de iubenda.
+
+## Menú móvil, masa verde y 404 (staging)
+- Menú móvil unificado: embeds `38651f60-3947-b3c6-52f0-91ac110f12ae` (ficha) y `e13f803b-3145-6f5e-967c-abb081e37370` (Inmuebles), mismo CSS que la Home.
+- Ficha: la "masa verde" sobre la foto era la banda antigua de vendido (`.container-11`) dentro de la galería; oculta junto con `.pill-2` y `.c-card_type` antiguos.
+- Página 404 (`6acf46c079e13ee0a6bfb338`): contenido antiguo oculto y embed `c3f25fc8-e52b-0bef-ff3f-26a2343204b4` con fondo petróleo, logo, "404" grande, botones a Inicio e Inmuebles y teléfono.
