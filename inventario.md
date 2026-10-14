@@ -232,3 +232,12 @@ Página `home-2-0-borrador` (`6acf46c079e13ee0a6bfb34a`), publicada solo en el s
 - /inmuebles: panel de filtros en acordeón unificado (Régimen, Habitaciones, Baños, Extras, Tipo de inmueble, Pueblo): cerrados por defecto, flecha, contador de selecciones y se abre solo el grupo con filtros activos (p. ej. al llegar desde la Home con `?pueblo=`). Script + CSS en el embed de override de la página.
 - Ficha PDF: cabecera de marca (veraile · Inmobiliaria · La Vera + teléfono/email), título/precio, foto principal + 3 fotos, datos, resumen y pie de contacto; una sola página A4 (`@page margin:0` quita cabecera/pie del navegador); oculto el icono verde de iubenda en impresión.
 - "También te puede interesar": miniatura del inmueble enlazada al campo imagen principal; tarjeta con foto + nombre + pueblo.
+
+## Revisión de diseño y contenido + micro-animaciones (2026-10-14, staging)
+- Correcciones: textos "¿Qué hacemos?" y "Viandar de la Vera (Cáceres)" (Home y ficha); contraste del subtítulo del formulario y del eyebrow del hero; fila de datos de tarjetas alineada a la izquierda y sin huecos (`min-height` de `.c-card_content.home` anulado); sección "Últimas ventas" sin hueco.
+- Móvil Home: "Recién llegados" pasa a carrusel horizontal con snap; servicios con ilustraciones más pequeñas.
+- Móvil /inmuebles: el panel de filtros era un cajón fuera de pantalla (`translateY(-536px)`) y dejaba un hueco; ahora botón "Filtros" que despliega el acordeón (abierto si hay parámetros en la URL).
+- Ficha móvil: ubicación en una línea (se oculta el pueblo duplicado), icono de galería arriba a la derecha.
+- Micro-animaciones (CSS + IntersectionObserver, respetan `prefers-reduced-motion`): entrada del hero y de la cabecera de la ficha; reveal escalonado al hacer scroll (tarjetas, servicios, bloques); hover con elevación y zoom suave de foto en tarjetas; hover en chips de pueblo, botones, tarjetas de oficina, galería y relacionados; foco del buscador; pulso del botón WhatsApp; contador animado de las cifras (+100, 15).
+- Embeds de pulido por página: Home `167d6330…` y `ba83bde1…`; /inmuebles `f4c7dfb8…` y `7c2186cd…`; ficha `8bdc8d21…`.
+- Pendiente: filtro de precio máximo del buscador; cualquier cambio de copy/imágenes final con el cliente.
