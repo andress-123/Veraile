@@ -218,3 +218,7 @@ Página `home-2-0-borrador` (`6acf46c079e13ee0a6bfb34a`), publicada solo en el s
 - Ficha: fotos con bordes redondeados y overlay "Ver las N fotos" cubriendo toda la baldosa; columna derecha más ancha (5/12); descripción con "Leer más"; formulario compactado.
 - Ficha PDF (print CSS): una página A4 con foto principal + 3 fotos, tarjetas de datos, resumen (2 primeros párrafos), chips y bloque de contacto.
 - Nota: el campo `m2` está relleno en ~81 de las primeras 100 fichas; donde falta no se muestra.
+
+### Ajustes 2 (2026-10-14, staging)
+- Home: cifras centradas (número sobre texto); "Busca por pueblo"/valoración, bloque de contacto/formulario y "Ven a vernos" alineados al mismo ancho (96→1344 a 1440 px) que el resto.
+- Tarjetas (Home y /inmuebles): vuelven los iconos, pero SOLO si hay dato (hab., baños, m²; pin de ubicación solo si hay texto), m² en la misma fila, más aire inferior. Se eliminó el script de fila de texto; ahora es CSS (`:has(:empty)`), por eso funciona también en el Designer salvo la lógica de vacíos, que solo se ve publicada.
