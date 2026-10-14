@@ -181,3 +181,13 @@ Página `home-2-0-borrador` (`6acf46c079e13ee0a6bfb34a`), publicada solo en el s
 - **Últimas ventas**: la 3.ª lista de la Home (y su versión móvil) filtradas por `Vendido`, 4 fichas, fondo menta, fotos en gris y "✓ Vendido". El precio y los iconos se ocultan por CSS en esa sección.
 - Busca por pueblo (enlaces a `/inmuebles?pueblo=...`, aún sin efecto) + Valorar mi casa (ancla a `#Contacto`) + formulario de contacto existente + oficinas. El componente `Footer` se quitó solo de esta página; el pie nuevo lleva las dos oficinas.
 - Pendiente: filtros Tipo/Pueblo/Precio en `/inmuebles`; texto en vez de iconos en la fila de datos; ocultar "m²" vacío; ficha de inmueble; móvil a repasar con capturas.
+
+## Fase 1 aplicada en el staging: tipos de inmueble (2026-10-14)
+
+- Colección nueva **Tipos de inmueble** (`6acf660a3f67d08e25b7bf2b`): Casa, Piso, Finca, Local comercial, Solar, Edificio, Chalet, Nave, Ático, Otro.
+- Campo nuevo `tipos` (referencia múltiple) en Inmuebles, además de `tipo` (opción, **tipo principal**, una sola) y `es-nuevo` (interruptor).
+- Rellenadas las **213** fichas (en 5 tandas de ≤50). Tipo principal: Casa 66, Piso 58, Finca 40, Local comercial 15, Solar 12, Edificio 7, Chalet 6, Nave 3, Ático 2, Otro 4. **16 fichas con más de un tipo** (p. ej. Finca + Casa, Casa + Local comercial).
+- Regla: el primer sustantivo del texto actual de "Tipo de inmueble" (o del nombre si estaba vacío) es el principal; los demás tipos que aparezcan se añaden a `tipos`. "Dúplex" solo = Piso; "Plaza de garaje", "Fábrica" y "Complejo rural" = Otro.
+- `es-nuevo` = true en las 7 fichas creadas en los últimos 30 días. `publicar-en-redes` sin rellenar (decisión del cliente).
+- Verificado tras escribir: 0 fichas sin `tipos`; recuentos de Casa (66), Finca (40) y Nuevo (7) coinciden.
+- Producción: sin cambios. Estos campos solo existen en la copia.
