@@ -227,3 +227,8 @@ Página `home-2-0-borrador` (`6acf46c079e13ee0a6bfb34a`), publicada solo en el s
 - /inmuebles: hueco entre foto y precio eliminado (imagen de tarjeta a 220 px, `.c-card_image` ya no 280 con img 180).
 - Destacado superior: pastilla blanca sólida con sombra y texto oscuro (antes semitransparente y ilegible); fila m²/baños alineada.
 - Iconos de ubicación, habitaciones, baños y m²: SVG minimalistas (trazo fino) aplicados como máscara CSS sobre los `<img>` existentes (sin cambiar los activos). Mismo CSS en Home y /inmuebles.
+
+### Ajustes 4 (2026-10-14, staging)
+- /inmuebles: panel de filtros en acordeón unificado (Régimen, Habitaciones, Baños, Extras, Tipo de inmueble, Pueblo): cerrados por defecto, flecha, contador de selecciones y se abre solo el grupo con filtros activos (p. ej. al llegar desde la Home con `?pueblo=`). Script + CSS en el embed de override de la página.
+- Ficha PDF: cabecera de marca (veraile · Inmobiliaria · La Vera + teléfono/email), título/precio, foto principal + 3 fotos, datos, resumen y pie de contacto; una sola página A4 (`@page margin:0` quita cabecera/pie del navegador); oculto el icono verde de iubenda en impresión.
+- "También te puede interesar": miniatura del inmueble enlazada al campo imagen principal; tarjeta con foto + nombre + pueblo.
