@@ -191,3 +191,11 @@ Página `home-2-0-borrador` (`6acf46c079e13ee0a6bfb34a`), publicada solo en el s
 - `es-nuevo` = true en las 7 fichas creadas en los últimos 30 días. `publicar-en-redes` sin rellenar (decisión del cliente).
 - Verificado tras escribir: 0 fichas sin `tipos`; recuentos de Casa (66), Finca (40) y Nuevo (7) coinciden.
 - Producción: sin cambios. Estos campos solo existen en la copia.
+
+## Filtros de /inmuebles aplicados en el staging (2026-10-14)
+- Staging `6acf46c079e13ee0a6bfb366` (copia, no producción). Publicado solo a su subdominio .webflow.io.
+- No se puede enlazar una lista anidada al multi-referencia `Tipos` por API, así que cada tarjeta lleva un bloque oculto (`[data-v2=filtros]`) con 3 textos: `pueblo` (←Dirección), `tipoinmueble` (←Tipo) y `tipoinmueble` (←campo nuevo "Tipos (texto para filtro)").
+- Campo nuevo `Tipos (texto para filtro)` (PlainText, slug `tipos-texto-para-filtro`): relleno en las 213 fichas con los nombres de `Tipos` separados por coma. Opcional: solo hace falta para fichas con más de un tipo; el tipo principal sale de `Tipo`.
+- Formulario del filtro: nuevo HtmlEmbed con checkboxes Tipo de inmueble y Pueblo (`fs-cmsfilter-field`).
+- Verificado en Playwright: `?tipoinmueble=Casa` 63, `Solar` 12, `?pueblo=Jaraíz de la Vera` 117, ambos 28, `?tipo=Venta&tipoinmueble=Finca` 38 (de 199 visibles).
+- Pendiente: `preciomax` del buscador de la Home aún no filtra (el precio es texto).
