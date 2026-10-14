@@ -211,3 +211,10 @@ Página `home-2-0-borrador` (`6acf46c079e13ee0a6bfb34a`), publicada solo en el s
 - "También te puede interesar": lista Inmuebles (100) con tarjeta enlazada; un script la reduce a 3 (mismo pueblo primero, sin la ficha actual) y construye el enlace desde un texto oculto con el Slug (la API no deja enlazar el enlace dinámico).
 - Píldora de estado (Vendido/Alquilado/Reservado) enlazada al campo CMS en la cabecera.
 - Verificado: ficha con terraza/parking/aire (chips), tarjetas 4 hab./2 baños/238 m², zona, relacionados; ficha reservada muestra "RESERVADO".
+
+## Ajustes por feedback del cliente (2026-10-14, staging)
+- Home 2.0: franja de cifras centrada; hero, buscador, bloques de pueblos/valoración, servicios y oficinas ceñidos a 1248 px centrados (oficinas ahora tarjeta redondeada, no ancho completo).
+- Tarjetas (Home y /inmuebles): fila de datos en texto "3 hab. · 2 baños · 120 m²" (m² vía texto oculto enlazado al campo `m2`; si falta, no se muestra).
+- Ficha: fotos con bordes redondeados y overlay "Ver las N fotos" cubriendo toda la baldosa; columna derecha más ancha (5/12); descripción con "Leer más"; formulario compactado.
+- Ficha PDF (print CSS): una página A4 con foto principal + 3 fotos, tarjetas de datos, resumen (2 primeros párrafos), chips y bloque de contacto.
+- Nota: el campo `m2` está vacío en la mayoría de fichas (hay que rellenarlo en el CMS para que salga).
