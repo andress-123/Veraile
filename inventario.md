@@ -144,3 +144,14 @@ Hecho el 2026-10-14. Solo en esa página (borrador) + clases `test-*` nuevas. Na
 - Publicado solo en `https://veraile-7c607b9967c33f0f5a3cf013cbc1fe6.webflow.io` (páginas `/home-2-0-borrador` y `/testing-area`, sacadas de borrador **solo en la copia**).
 - Producción (`61f9d3408efe602f155341f0`, workspace `6224eb33e2f1f81739ba3990`) queda solo para lectura. Las páginas de prueba que creé allí siguen en borrador.
 - Desde ahora, toda escritura va al staging.
+
+## Fase 1 en el staging (`6acf46c079e13ee0a6bfb366`, colección Inmuebles `6acf46c079e13ee0a6bfb352`)
+
+Solo añadido, nada borrado ni rellenado todavía:
+- `Es nuevo` (interruptor, con ayuda) · `Publicar en redes` (interruptor, con ayuda).
+- `Tipo` (lista: Piso, Casa, Chalet, Finca, Local comercial, Edificio, Solar, Nave, Ático, Otro). El texto libre "Tipo de inmueble" se conserva.
+- Ya existían y se reutilizan: estado (`vendido-alquilado`), pueblo (`ubicacion`, llamado "Dirección") y precio anterior (`compare-at-price` en SKUs).
+- Recuento aproximado por texto de "Tipo de inmueble": Casa 71, Piso 58, Finca 39, Local 15, Solar 10, Chalet 7, Edificio 5, Nave 2, Ático 2, sin tipo 2.
+- Pendiente de OK de Andrés: muestra de 10 fichas para rellenar `Tipo` y `Es nuevo`.
+
+Limitaciones de la API en la copia: escribir el código de cabecera de una página da 404 y los scripts copiados no se pueden editar (se registró `VerailePilotHomeB`).
