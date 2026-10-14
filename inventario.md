@@ -172,3 +172,12 @@ Limitaciones de la API en la copia: escribir el código de cabecera de una pági
 - Buscador (HtmlEmbed bajo el hero, GET a `/inmuebles`): Operación (`tipo=Venta|Alquiler`), Tipo (`tipoinmueble`), Pueblo (`pueblo`), Precio máximo (`preciomax`).
 - Comprobado: el listado de la copia acepta filtros por URL (`?tipo=Venta` → 192 de 199; `?Tipo=Alquiler` → 7). **Solo Operación es funcional hoy**; Tipo, Pueblo y Precio máximo necesitan campos de filtro en las tarjetas y el formulario de `/inmuebles`.
 - Limitación API: publicar a una web ya publicada exige esperar 1 minuto entre publicaciones.
+
+## Home 2.0 en el staging: secciones completas (2026-10-14)
+
+Página `home-2-0-borrador` (`6acf46c079e13ee0a6bfb34a`), publicada solo en el subdominio de la copia.
+- Cabecera (componente `Nav`, en la copia): Comprar, Alquilar, Vender tu casa, Pueblos, Últimas ventas + botón con el teléfono (WhatsApp). Los enlaces antiguos (tipo página) se sustituyeron por enlaces URL con filtro (`/inmuebles?tipo=Venta|Alquiler`) y anclas (`/#Contacto`, `/#pueblos`, `/#ventas`).
+- Hero, buscador (solo Operación filtra de verdad), franja de cifras, Recién llegados (6 fichas, pastillas de estado).
+- **Últimas ventas**: la 3.ª lista de la Home (y su versión móvil) filtradas por `Vendido`, 4 fichas, fondo menta, fotos en gris y "✓ Vendido". El precio y los iconos se ocultan por CSS en esa sección.
+- Busca por pueblo (enlaces a `/inmuebles?pueblo=...`, aún sin efecto) + Valorar mi casa (ancla a `#Contacto`) + formulario de contacto existente + oficinas. El componente `Footer` se quitó solo de esta página; el pie nuevo lleva las dos oficinas.
+- Pendiente: filtros Tipo/Pueblo/Precio en `/inmuebles`; texto en vez de iconos en la fila de datos; ocultar "m²" vacío; ficha de inmueble; móvil a repasar con capturas.
