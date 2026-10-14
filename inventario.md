@@ -252,3 +252,7 @@ Página `home-2-0-borrador` (`6acf46c079e13ee0a6bfb34a`), publicada solo en el s
 ### Ajustes 5 (2026-10-14, staging)
 - Chip "↓ X €" de rebaja centrado en la pastilla (inline-flex, altura 28 px) e importes con punto de millar ("5.000 €"); todas las pastillas de estado (`.v2-b`, `.fxp`) con altura fija y texto centrado.
 - Home antigua (todavía es la raíz "/" hasta que se haga "Set as Home page"): sus tarjetas de "Inmuebles destacados" usan ya las etiquetas nuevas (sin banda VENDIDO ni VENTA/OPORTUNIDAD), iconos minimal y fila de datos unificada. Quedará en borrador al activar la nueva.
+
+### Ficha PDF v3 (2026-10-14, staging)
+- Cabecera con el logotipo SVG de Veraile (en vez de texto) + "Ficha de inmueble" y contacto; foto principal + 3 fotos sin solaparse; precio tachado reducido; banda antigua de VENDIDO oculta en impresión.
+- Faldón inferior pegado al borde: 4 columnas (Oficina Jaraíz · Oficina Villanueva · Escríbenos/WhatsApp · Esta ficha con la URL), fondo petróleo. Una sola página A4.
