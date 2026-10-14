@@ -217,4 +217,4 @@ Página `home-2-0-borrador` (`6acf46c079e13ee0a6bfb34a`), publicada solo en el s
 - Tarjetas (Home y /inmuebles): fila de datos en texto "3 hab. · 2 baños · 120 m²" (m² vía texto oculto enlazado al campo `m2`; si falta, no se muestra).
 - Ficha: fotos con bordes redondeados y overlay "Ver las N fotos" cubriendo toda la baldosa; columna derecha más ancha (5/12); descripción con "Leer más"; formulario compactado.
 - Ficha PDF (print CSS): una página A4 con foto principal + 3 fotos, tarjetas de datos, resumen (2 primeros párrafos), chips y bloque de contacto.
-- Nota: el campo `m2` está vacío en la mayoría de fichas (hay que rellenarlo en el CMS para que salga).
+- Nota: el campo `m2` está relleno en ~81 de las primeras 100 fichas; donde falta no se muestra.
