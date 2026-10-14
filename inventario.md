@@ -241,3 +241,10 @@ Página `home-2-0-borrador` (`6acf46c079e13ee0a6bfb34a`), publicada solo en el s
 - Micro-animaciones (CSS + IntersectionObserver, respetan `prefers-reduced-motion`): entrada del hero y de la cabecera de la ficha; reveal escalonado al hacer scroll (tarjetas, servicios, bloques); hover con elevación y zoom suave de foto en tarjetas; hover en chips de pueblo, botones, tarjetas de oficina, galería y relacionados; foco del buscador; pulso del botón WhatsApp; contador animado de las cifras (+100, 15).
 - Embeds de pulido por página: Home `167d6330…` y `ba83bde1…`; /inmuebles `f4c7dfb8…` y `7c2186cd…`; ficha `8bdc8d21…`.
 - Pendiente: filtro de precio máximo del buscador; cualquier cambio de copy/imágenes final con el cliente.
+
+## Etiquetas unificadas + migración de páginas (2026-10-14, staging)
+- Etiquetas de estado unificadas en Home, /inmuebles, /inmuebles-madrid y ficha: Nuevo (blanca con punto), ↓ Precio rebajado (turquesa + ahorro en €), Reservado (oscura), ✓ Vendido/Alquilado (abajo-izq., foto en gris). Desaparecen las píldoras antiguas VENTA/OPORTUNIDAD y el banner VENDIDO. En el destacado superior: píldora "Destacado". Cada tarjeta lleva `data-cms-estado` (opción Vendido/Alquilado/Reservado) y un marcador `data-flag=nuevo` ligado a "Es nuevo"; un script calcula el estado (rebajado = precio de comparación > precio).
+- Ficha: píldora de estado en la cabecera con el mismo estilo.
+- Páginas: "Home 2.0 borrador" renombrada "Home" (SEO copiado); la Home antigua renombrada "Home antigua". La API NO permite poner en borrador la página de inicio ni cambiar cuál es: hay que usar en el Designer Páginas → "Home" (nueva) → ⚙ → "Set as Home page"; después poner "Home antigua" en borrador.
+- En borrador: Testing area, Test Page, Inmuebles Copia (devuelven 404 publicadas). /inmuebles-madrid se mantiene (es una página real) con las tarjetas y etiquetas unificadas.
+- Producción (`61f9d3408efe602f155341f0`) sigue sin tocarse.
