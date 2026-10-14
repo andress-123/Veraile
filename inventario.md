@@ -222,3 +222,8 @@ Página `home-2-0-borrador` (`6acf46c079e13ee0a6bfb34a`), publicada solo en el s
 ### Ajustes 2 (2026-10-14, staging)
 - Home: cifras centradas (número sobre texto); "Busca por pueblo"/valoración, bloque de contacto/formulario y "Ven a vernos" alineados al mismo ancho (96→1344 a 1440 px) que el resto.
 - Tarjetas (Home y /inmuebles): vuelven los iconos, pero SOLO si hay dato (hab., baños, m²; pin de ubicación solo si hay texto), m² en la misma fila, más aire inferior. Se eliminó el script de fila de texto; ahora es CSS (`:has(:empty)`), por eso funciona también en el Designer salvo la lógica de vacíos, que solo se ve publicada.
+
+### Ajustes 3 (2026-10-14, staging)
+- /inmuebles: hueco entre foto y precio eliminado (imagen de tarjeta a 220 px, `.c-card_image` ya no 280 con img 180).
+- Destacado superior: pastilla blanca sólida con sombra y texto oscuro (antes semitransparente y ilegible); fila m²/baños alineada.
+- Iconos de ubicación, habitaciones, baños y m²: SVG minimalistas (trazo fino) aplicados como máscara CSS sobre los `<img>` existentes (sin cambiar los activos). Mismo CSS en Home y /inmuebles.
