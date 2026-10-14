@@ -285,3 +285,4 @@ Página `home-2-0-borrador` (`6acf46c079e13ee0a6bfb34a`), publicada solo en el s
 - Logo/"Home"/logo del pie de Inmuebles, ficha, Madrid y Servicios apuntaban a `/old-home` (borrador): script que los redirige a `/` (embeds en cada página: `e13f803b…` Inmuebles, `38651f60…` ficha, `4fcfb680-c24e-d9e4-0c95-ca7370a33156` Madrid, `6a8745ea-2752-d297-0525-aefabf9d7ef3` Servicios).
 - Slider móvil: las tarjetas 3+ quedaban en `opacity:0` (interacción de Webflow que solo se activa con scroll vertical); forzado visible en `.products-list`. Comprobado con swipe táctil real.
 - Accesibilidad/SEO: `lang="es"` por script, h1 en Inmuebles/Madrid (oculto) y ficha (role heading), enlaces sociales reales en la Home (Instagram y LinkedIn; Facebook oculto porque no hay URL), zonas táctiles del pie ampliadas.
+- Tarjetas de /inmuebles: habitaciones, baños y m² en una sola línea (`.c-card_details` pasa de columna a fila) y alineados con el precio y la ubicación (embed `e13f803b…`).
