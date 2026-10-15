@@ -297,3 +297,9 @@ Página `home-2-0-borrador` (`6acf46c079e13ee0a6bfb34a`), publicada solo en el s
 - /inmuebles: el hueco venía de que el CMS parte las fichas en dos listas (límite 100); ahora fluyen como una sola cuadrícula con CSS (`display:contents` sobre las dos listas, clase `.fx-merge`) y el contador suma ambas (embed `e13f803b…`).
 - Ficha: mapa real de OpenStreetMap centrado en el pueblo con círculo de zona aproximada (embed `2d4546f5-a73c-698f-66f0-d80f2c29038f`, coordenadas por pueblo); precio actual + tachado gris + chip de ahorro en una línea (embed `b3e35d48…`).
 - PDF: pie en barra fina a sangre con solo oficinas y contacto (sin "Esta ficha"), más aire en cabecera/galería/texto, bloques `.rv` forzados visibles al imprimir, y ocultos los restos de iubenda/banner/botón de cookies (embeds `00837923…`, `9ceeca61…`).
+
+## Filtros, ficha sin cabecera, mapa y galería (staging)
+- Filtros "Extras": las etiquetas (Terraza, Parking, Ascensor, Climatizado, Piscina) no se veían; ahora fila con texto a la izquierda e interruptor a la derecha (el span original estaba mal etiquetado y se oculta). Título del panel móvil a 26px (embed `e13f803b…`).
+- Ficha: sin nav superior (empieza directamente con el inmueble), sin barra inferior de WhatsApp/Llamar, contacto + logo como pie (embed `b3e35d48…`).
+- Mapa: más cercano (bbox ≈ 1,3 km de alto), bloqueado (`pointer-events:none`), controles de zoom recortados, etiqueta arriba y atribución OSM visible (embeds `2d4546f5…` y `9ceeca61…`).
+- Galería móvil: foto principal arriba y 3 miniaturas debajo en cuadrícula normal; botón blanco de galería eliminado.
