@@ -303,3 +303,8 @@ Página `home-2-0-borrador` (`6acf46c079e13ee0a6bfb34a`), publicada solo en el s
 - Ficha: sin nav superior (empieza directamente con el inmueble), sin barra inferior de WhatsApp/Llamar, contacto + logo como pie (embed `b3e35d48…`).
 - Mapa: más cercano (bbox ≈ 1,3 km de alto), bloqueado (`pointer-events:none`), controles de zoom recortados, etiqueta arriba y atribución OSM visible (embeds `2d4546f5…` y `9ceeca61…`).
 - Galería móvil: foto principal arriba y 3 miniaturas debajo en cuadrícula normal; botón blanco de galería eliminado.
+
+## PDF una página, mapa y tarjetas (staging)
+- PDF: una sola página en Carta y A4 (min-height 246mm), pie en texto plano sin bloque de color (borde fino superior), mapa oculto al imprimir, y script `beforeprint` que oculta restos de iubenda/cookies/badge (embeds `00837923…`, `9ceeca61…`).
+- Mapa: iframe recortado para ocultar el texto largo de OSM y sustituido por un enlace pequeño "© OpenStreetMap" (se mantiene la atribución exigida por la licencia).
+- Tarjetas de inmuebles (Home e /inmuebles): bordes redondeados (22px), `overflow:hidden` y más aire inferior (embeds `75db2af1…` y `7c2186cd…`).
