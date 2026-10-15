@@ -309,3 +309,5 @@ Página `home-2-0-borrador` (`6acf46c079e13ee0a6bfb34a`), publicada solo en el s
 - Mapa: iframe recortado para ocultar el texto largo de OSM y sustituido por un enlace pequeño "© OpenStreetMap" (se mantiene la atribución exigida por la licencia).
 - Tarjetas de inmuebles (Home e /inmuebles): bordes redondeados (22px), `overflow:hidden` y más aire inferior (embeds `75db2af1…` y `7c2186cd…`).
 - Corrección de malentendido: la petición de "empezar directamente con el inmueble, logo y contacto abajo, sin bloque de color" era sobre el PDF, no la web. Web de la ficha: navbar y barra móvil de WhatsApp/Llamar restauradas. PDF: sin cabecera, empieza por las pastillas y el título; pie con contacto en texto y logo al final (embeds `b3e35d48…`, `9ceeca61…`).
+- Footer móvil (Inmuebles, ficha, Servicios, Inmuebles Madrid): logo de 104px y redes de 28px en una sola fila, sin márgenes sobrantes (≈68px de alto); bloque `.footer-bottom-wrapper` oculto en móvil.
+- PDF de la ficha: pie compacto en dos líneas de texto (oficinas en una sola línea con dirección y teléfono; correo · WhatsApp · web debajo) y logo al final (embed `00837923…`).
