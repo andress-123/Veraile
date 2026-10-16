@@ -313,3 +313,9 @@ Página `home-2-0-borrador` (`6acf46c079e13ee0a6bfb34a`), publicada solo en el s
 - PDF de la ficha: pie compacto en dos líneas de texto (oficinas en una sola línea con dirección y teléfono; correo · WhatsApp · web debajo) y logo al final (embed `00837923…`).
 - Galería: la capa verde "+N" interceptaba el clic sobre la tercera miniatura y no abría la lightbox; `pointer-events:none` en `[data-fx=gal] .w-dyn-item::after` (embed `9ceeca61…`). Probado con toque real en móvil emulado: la lightbox abre.
 - PDF: precio, tachado y chip de ahorro alineados a la derecha al ras del contenido (columna flex, `text-align:right`); galería a todo el ancho del contenido en impresión; pie final = fila con logo a la izquierda y "622 891 456 · correo · veraile.com" a la derecha, centrado verticalmente; eliminados "Ficha de inmueble" y el bloque de oficinas (embed `9ceeca61…`; `[data-fx=pcontact]` oculto en impresión).
+
+## Navbar unificada (staging)
+- Un único componente `Nav` (id `e321d099-b4f5-700d-dcb6-754a8143614f`) en Home, Servicios, Inmuebles, ficha (plantilla), Inmuebles Madrid y Política de privacidad. Enlaces: Inicio (/), Inmuebles (/inmuebles), Servicios (/servicios), Contacto (/#Contacto) + pastilla de teléfono (WhatsApp) siempre visible, también en móvil.
+- Se eliminó "Últimas ventas"/"Pueblos"/"Comprar"/"Alquilar" de la navegación (siguen existiendo como anclas/filtros en la Home). Se retiraron las instancias antiguas `NavBar_2` de Inmuebles, ficha y Madrid (los componentes `NavBar_2`/`Nav Bar2` siguen existiendo sin usar).
+- CSS de la navbar dentro del componente (embed `8f01a097-c189-e002-886c-67275162eec6`): ítems y pastilla centrados verticalmente (44px), contenedor 1248px alineado con el contenido, enlace activo con fondo suave, menú móvil en lista vertical.
+- Pendiente: Servicios aún muestra el pie y el contenido antiguos; Búsqueda y plantilla de Tipos no tienen nav (no son páginas públicas relevantes).
