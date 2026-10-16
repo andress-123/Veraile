@@ -319,3 +319,11 @@ Página `home-2-0-borrador` (`6acf46c079e13ee0a6bfb34a`), publicada solo en el s
 - Se eliminó "Últimas ventas"/"Pueblos"/"Comprar"/"Alquilar" de la navegación (siguen existiendo como anclas/filtros en la Home). Se retiraron las instancias antiguas `NavBar_2` de Inmuebles, ficha y Madrid (los componentes `NavBar_2`/`Nav Bar2` siguen existiendo sin usar).
 - CSS de la navbar dentro del componente (embed `8f01a097-c189-e002-886c-67275162eec6`): ítems y pastilla centrados verticalmente (44px), contenedor 1248px alineado con el contenido, enlace activo con fondo suave, menú móvil en lista vertical.
 - Pendiente: Servicios aún muestra el pie y el contenido antiguos; Búsqueda y plantilla de Tipos no tienen nav (no son páginas públicas relevantes).
+
+## Ronda: loader, menú móvil, Servicios→Home, PDF y iconos (staging)
+- Nav (componente): enlace "Servicios" ahora apunta a `/#Servicios` (Home, a la altura de Servicios) con scroll suave y offset de cabecera. No se creó página nueva de Servicios; la antigua sigue existiendo sin uso.
+- Menú móvil: despliega justo bajo la cabecera (verificado en Pixel 7); icono de hamburguesa centrado en su caja 48×48.
+- Page loader blanco con la montaña del logo animada (embed dentro del componente Nav, `#vl`): se retira en `load` (mín. 450 ms), `pageshow` o failsafe 6 s; oculto en impresión.
+- Ficha PDF: footer (logo izq. + teléfono · email · web dcha.) fijo abajo del todo; descripción con desvanecido (`.fx-clip`) si se corta; sigue en 1 página (Letter y A4 verificados).
+- Ficha web: tarjetas de habitaciones/baños/m² con los mismos iconos que las cards de la Home.
+- Producción sin tocar. Banner de cookies propio sigue pendiente de pegar a mano (`cookies-banner.html`).
