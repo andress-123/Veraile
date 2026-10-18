@@ -327,3 +327,16 @@ Página `home-2-0-borrador` (`6acf46c079e13ee0a6bfb34a`), publicada solo en el s
 - Ficha PDF: footer (logo izq. + teléfono · email · web dcha.) fijo abajo del todo; descripción con desvanecido (`.fx-clip`) si se corta; sigue en 1 página (Letter y A4 verificados).
 - Ficha web: tarjetas de habitaciones/baños/m² con los mismos iconos que las cards de la Home.
 - Producción sin tocar. Banner de cookies propio sigue pendiente de pegar a mano (`cookies-banner.html`).
+
+## Ronda: mejoras de la Home tras análisis (staging)
+- Eliminado el módulo duplicado de contacto (email/teléfono/"Viandar") sobre "Escríbenos": la info ya está en "Ven a vernos".
+- Navbar de la Home: un solo ítem activo según la sección visible (Inicio / Servicios / Contacto); Contacto se mantiene activo en el bloque de oficinas.
+- H2 en inglés traducido ("A un clic del inmueble que buscas"); duplicado de "En La Vera, lo bueno se vende rápido" degradado a H3 en la versión móvil.
+- Alt text de las fotos de las cards enlazado al nombre del inmueble (CMS); iconos decorativos con alt vacío.
+- Franja de datos: tercer dato numérico ("2 oficinas en La Vera, sin cita previa").
+- Dirección de las cards con más contraste (#4F6366).
+- Últimas ventas: CTA "¿Tienes un inmueble? Te ayudamos a venderlo →" hacia Contacto.
+- Formulario: botón Enviar con estilo de marca; más aire en Contacto y separación con el bloque de oficinas; gutter móvil corregido.
+- Footer de la Home: fila inferior alineada (email · Instagram · LinkedIn · Política de privacidad); cards de oficinas a ancho completo en móvil. Eliminado enlace Facebook oculto.
+- NO hecho (por petición): ilustraciones de Servicios más intensas. Pendiente: banner de cookies propio (manual), Política de privacidad con estilo nuevo, página Aviso legal inexistente.
+- Producción sin tocar.
